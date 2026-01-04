@@ -13,7 +13,9 @@ use pocketmine\item\ItemIdentifier as IID;
 final class ItemFactory extends ObjectRegistry{
 
 	protected static function registerDefaults() : void{
-		
+		self::register("Bundle", function(IID $id){
+			return new Bundle($id, "Bundle");
+		});
 	}
 
 	public static function register(string $name, Closure $createItem) : Item{
