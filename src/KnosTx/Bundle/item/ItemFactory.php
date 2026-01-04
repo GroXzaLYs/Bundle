@@ -14,7 +14,7 @@ final class ItemFactory extends ObjectRegistry{
 
 	protected static function registerDefaults() : void{
 		self::register("Bundle", function(IID $id){
-			return new Bundle($id, "Bundle");
+			return new Bundle($id);
 		});
 	}
 
