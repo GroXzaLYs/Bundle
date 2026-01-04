@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace KnosTx\Bundle;
 
 use KnosTx\Bundle\item\Bundle;
+use KnosTx\Bundle\item\ItemFactory;
 use pocketmine\plugin\PluginBase;
 use pocketmine\item\VanillaItems;
 
